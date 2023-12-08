@@ -7,7 +7,20 @@ Try running it for
 Hint - use Date class exposed in JS
 There is no automated test for this one, this is more for you to understand time goes up as computation goes up
 */
-
-function calculateTime(n) {
-    return 0.01;
+function CalSum(a) {
+  let sum = 0;
+  for (let i = 0; i < a; i++) {
+    sum += 1;
+  }
 }
+
+function calculateTime() {
+  const date1 = new Date();
+
+  CalSum(10000000000);
+  const date2 = new Date();
+  const Time = Math.abs(date2 - date1);
+  console.log(Time + " milliseconds");
+  setTimeout;
+}
+calculateTime();

@@ -16,6 +16,24 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+class Calculator {
+  result;
+  stack;
+  Calculator() {
+    result = 0;
+    stack = new Stack();
+   
+  }
+  calculate(str){
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === " ") {
+        continue;
+      } else {
+        this.stack.push(str[i]);
+      }
+    }
+  }
+
+}
 
 module.exports = Calculator;
